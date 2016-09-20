@@ -1,4 +1,5 @@
-//define margins for Goku's movement
+var getGoku = document.getElementById("goku");
+var getObstacle = document.getElementById("obstacle");
 var addMarginTop = 20;
 var addMarginLeft = 20;
 
@@ -12,28 +13,28 @@ function gokuGoDown() {
 	
 	if (x == 40) {
 
-		document.getElementById("goku").style.marginTop = addMarginTop + "px";
+		getGoku.style.marginTop = addMarginTop + "px";
 		addMarginTop += 20;
 
 	} else if (x == 39) {
 		
-		document.getElementById("goku").style.marginLeft = addMarginLeft + "px";
+		getGoku.style.marginLeft = addMarginLeft + "px";
 		addMarginLeft += 20;	
 
 	} else if (x == 38) {
 
-		document.getElementById("goku").style.marginTop = addMarginTop + "px";
+		getGoku.style.marginTop = addMarginTop + "px";
 		addMarginTop -= 20;
 
 	} else if (x == 37) {
 
-		document.getElementById("goku").style.marginLeft = addMarginLeft + "px";
+		getGoku.style.marginLeft = addMarginLeft + "px";
 		addMarginLeft -= 20;
 
 	}
 
 //get Goku's position		
-	var gokuPosition = document.getElementById("goku").getBoundingClientRect();
+	var gokuPosition = getGoku.getBoundingClientRect();
 	console.log(gokuPosition.top, gokuPosition.bottom, gokuPosition.left, gokuPosition.right);
 
 }
@@ -42,11 +43,11 @@ function gokuGoDown() {
 function floatRock() {
 
 		setTimeout(function() {
-		document.getElementById("obstacle").style.marginRight = 100 + "%";
+		getObstacle.style.marginRight = 100 + "%";
 		}, 500 );
 
 		setTimeout(function() {
-		document.getElementById("obstacle").style.opacity = "0";
+		getObstacle.style.opacity = "0";
 		}, 6000 );
 }
 
