@@ -40,7 +40,7 @@ function gokuGoDown() {
 
 function floatRock() {
 
-	var moveRock = setTimeout(function() {
+		setTimeout(function() {
 		document.getElementById("obstacle").style.marginRight = 110 + "%";
 		}, 500 );
 
