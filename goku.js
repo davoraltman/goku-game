@@ -8,7 +8,7 @@ function gokuGoDown() {
 	//check which key is pressed
 	var x = event.keyCode;
 		
-	//only move goku if keyboard arrows are used
+	//only move Goku if keyboard arrows are used
 	
 	if (x == 40) {
 
@@ -32,12 +32,15 @@ function gokuGoDown() {
 
 	}
 
+//get Goku's position		
+	var gokuPosition = document.getElementById("goku").getBoundingClientRect();
+	console.log(gokuPosition.top, gokuPosition.bottom, gokuPosition.left, gokuPosition.right);
+
 	return GoGoku;
 
 }
 
 //make the rock float
-
 function floatRock() {
 
 		setTimeout(function() {
@@ -47,7 +50,13 @@ function floatRock() {
 		setTimeout(function() {
 		document.getElementById("obstacle").style.opacity = "0";
 		}, 6000 );
+
+		var rockPosition = document.getElementById("obstacle").getBoundingClientRect();
+		console.log(rockPosition.top, rockPosition.bottom, rockPosition.left, rockPosition.right);
+
+	return GoGoku;
 }
+
 
 
 
