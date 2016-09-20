@@ -17,5 +17,5 @@ body {
 	height: 100px;
 	float: right;
 	display: inline-block;
-	transition: margin 10s;
+	transition: margin 8s, opacity 1s;
 }

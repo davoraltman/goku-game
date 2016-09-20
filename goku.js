@@ -41,10 +41,18 @@ function gokuGoDown() {
 function floatRock() {
 
 		setTimeout(function() {
-		document.getElementById("obstacle").style.marginRight = 110 + "%";
+		document.getElementById("obstacle").style.marginRight = 100 + "%";
 		}, 500 );
 
+		setTimeout(function() {
+		document.getElementById("obstacle").style.opacity = "0";
+		}, 6000 );
 }
+
+
+
+
+
 
 
 
