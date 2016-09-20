@@ -5,7 +5,6 @@ body {
 #goku {
 	background-image: url("goku.gif");
 	display: inline-block;
-	margin-top: 10px;
 	width: 179px;
 	height: 150px;
 	transition: margin 0.5s;
