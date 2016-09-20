@@ -59,26 +59,3 @@ function timer() {
 }
 
 setInterval(function() {timer()}, 1000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
