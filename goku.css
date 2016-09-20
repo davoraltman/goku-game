@@ -1,0 +1,21 @@
+body {
+	background: url("clouds.jpg") no-repeat fixed;
+}
+
+#goku {
+	background-image: url("goku.gif");
+	display: inline-block;
+	width: 179px;
+	height: 150px;
+	transition: margin 0.5s;
+	position: absolute;
+}
+
+#obstacle {
+	background-image: url("rock.gif");
+	width: 100px;
+	height: 100px;
+	float: right;
+	display: inline-block;
+	transition: margin 10s;
+}
