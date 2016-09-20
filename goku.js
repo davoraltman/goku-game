@@ -50,7 +50,15 @@ function floatRock() {
 		}, 6000 );
 }
 
+//add timer
+var i = 0;
 
+function timer() {
+	document.getElementById("timer").innerHTML = i;
+	i++;
+}
+
+setInterval(function() {timer()}, 1000);
 
 
 
