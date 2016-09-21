@@ -42,12 +42,13 @@ function gokuGoDown() {
 function floatRock() {
 
 		setTimeout(function() {
-		getObstacle.style.marginRight = 100 + "%";
+		getObstacle.style.marginRight = 110 + "%";
 		}, 500 );
 
 		setTimeout(function() {
-		getObstacle.style.opacity = "0";
-		}, 6000 );
+		var obstaclePosition = getObstacle.getBoundingClientRect();
+		console.log(obstaclePosition);
+		}, 500 );
 }
 
 //add timer

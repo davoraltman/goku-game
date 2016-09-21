@@ -20,7 +20,7 @@ body {
 	margin-right: -100px;
 	float: right;
 	display: inline-block;
-	transition: margin 8s, opacity 1s;
+	transition: margin 7s;
 }
 
 #timer {
