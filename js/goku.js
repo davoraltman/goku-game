@@ -38,6 +38,7 @@ function gokuGoDown() {
 
 }
 
+
 //make the rock float
 function floatRock() {
 
@@ -45,10 +46,9 @@ function floatRock() {
 		getObstacle.style.marginRight = 110 + "%";
 		}, 500 );
 
-		setTimeout(function() {
+		//log the initial position of the rock
 		var obstaclePosition = getObstacle.getBoundingClientRect();
 		console.log(obstaclePosition);
-		}, 500 );
 }
 
 //add timer
