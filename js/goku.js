@@ -48,7 +48,7 @@ function floatRock() {
 
 		//log the initial position of the rock
 		var obstaclePosition = getObstacle.getBoundingClientRect();
-		console.log(obstaclePosition);
+		console.log(obstaclePosition.top, obstaclePosition.bottom, obstaclePosition.left, obstaclePosition.right);
 }
 
 // check if Goku and the rock collide
