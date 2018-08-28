@@ -3,7 +3,7 @@ var getObstacle = document.getElementById("obstacle");
 var addMarginTop = 20;
 var addMarginLeft = 20;
 
-function gokuGoDown() {
+function gokuGo() {
 
 	//check which key is pressed
 	var x = event.keyCode;
