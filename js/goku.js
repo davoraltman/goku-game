@@ -7,18 +7,18 @@ function gokuGoDown() {
 
 	//check which key is pressed
 	var x = event.keyCode;
-		
+
 	//only move Goku if keyboard arrows are used
-	
+
 	if (x == 40) {
 
 		getGoku.style.marginTop = addMarginTop + "px";
 		addMarginTop += 20;
 
 	} else if (x == 39) {
-		
+
 		getGoku.style.marginLeft = addMarginLeft + "px";
-		addMarginLeft += 20;	
+		addMarginLeft += 20;
 
 	} else if (x == 38) {
 
@@ -32,7 +32,7 @@ function gokuGoDown() {
 
 	}
 
-//get Goku's position		
+//get Goku's position
 	var gokuPosition = getGoku.getBoundingClientRect();
 	console.log(gokuPosition.top, gokuPosition.bottom, gokuPosition.left, gokuPosition.right);
 
@@ -50,6 +50,14 @@ function floatRock() {
 		var obstaclePosition = getObstacle.getBoundingClientRect();
 		console.log(obstaclePosition);
 }
+
+// check if Goku and the rock collide
+/* still needs to be worked on
+
+var overlap = !(rect1.right < rect2.left ||
+                rect1.left > rect2.right ||
+                rect1.bottom < rect2.top ||
+                rect1.top > rect2.bottom) */
 
 //add timer
 var i = 0;
